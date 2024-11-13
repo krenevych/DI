@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DI</string>
+    <string name="make_call">Calling…</string>
+</resources>
