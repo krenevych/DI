@@ -1,9 +1,10 @@
 package com.example.di.cellphone
 
 import android.util.Log
+import javax.inject.Inject
 
 // Dependency injection into constructor
-class CellPhone(
+class CellPhone @Inject constructor(
     private val processor: Processor,
     private val memory: Memory,
     private val screen: Screen,

@@ -1,6 +1,8 @@
 package com.example.di.cellphone
 
-class Screen {
+import javax.inject.Inject
+
+class Screen @Inject constructor() {
 
     override fun toString(): String = TAG
 

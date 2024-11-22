@@ -1,6 +1,8 @@
 package com.example.di.cellphone
 
-class Memory {
+import javax.inject.Inject
+
+class Memory @Inject constructor() {
 
     override fun toString(): String = TAG
 
