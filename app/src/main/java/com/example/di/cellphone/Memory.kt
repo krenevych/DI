@@ -5,6 +5,6 @@ class Memory {
     override fun toString(): String = TAG
 
     companion object {
-        private val TAG = CellPhone::class.java.simpleName
+        private val TAG = Memory::class.java.simpleName
     }
 }
