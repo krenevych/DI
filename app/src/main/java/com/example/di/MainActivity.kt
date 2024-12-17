@@ -13,11 +13,13 @@ import javax.inject.Inject
 class MainActivity() : AppCompatActivity() {
 
     // DI into field
-    @Inject
-    lateinit var cellPhone: CellPhone
+//    @Inject
+//    lateinit var cellPhone: CellPhone
 
     @Inject
-    lateinit var memory: Memory
+    lateinit var memory1: Memory
+    @Inject
+    lateinit var memory2: Memory
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,9 +28,10 @@ class MainActivity() : AppCompatActivity() {
 
         val button: Button = findViewById(R.id.buttonCall)
         button.setOnClickListener {
-            cellPhone.makeCall()
+//            cellPhone.makeCall()
 
-            Log.d("CellPhone", "memory $memory ")
+            Log.d("MEMORY_TAG", "memory1: $memory1 ")
+            Log.d("MEMORY_TAG", "memory2: $memory2 ")
         }
 
     }
